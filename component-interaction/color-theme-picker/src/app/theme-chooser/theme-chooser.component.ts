@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ThemeChooserService } from './theme-chooser.service';
 
 @Component({
@@ -6,14 +6,11 @@ import { ThemeChooserService } from './theme-chooser.service';
   templateUrl: './theme-chooser.component.html',
   styleUrls: ['./theme-chooser.component.css']
 })
-export class ThemeChooserComponent implements OnInit {
+export class ThemeChooserComponent {
 
   private inputColor: string;
 
   constructor(private themeChooserService: ThemeChooserService) { }
-
-  ngOnInit() {
-  }
 
   buttonClicked() {
       this.themeChooserService.changeColor(this.inputColor);
