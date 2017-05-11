@@ -1,2 +1,2 @@
 # angulariments
-Angular2 expirments
+Angular2 experiments
