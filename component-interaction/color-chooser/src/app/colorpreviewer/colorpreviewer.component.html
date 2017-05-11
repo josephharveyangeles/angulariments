@@ -1,0 +1,8 @@
+<div class="row">
+  <app-colorasker (onColorInputted)="changeColor($event)"></app-colorasker>
+  <div class="preview-box col-md-4 col-md-offset-4" [ngStyle]="{'background-color':color}">
+  </div>
+</div>
+<div class="row">
+  <button id="button" class="btn btn-default" (click)=reset()>Reset</button>
+</div>

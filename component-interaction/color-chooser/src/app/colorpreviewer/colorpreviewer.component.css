@@ -1,0 +1,13 @@
+.preview-box {
+    height: 200px;
+    border-radius: 5px;
+    background-color:gray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#button {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}

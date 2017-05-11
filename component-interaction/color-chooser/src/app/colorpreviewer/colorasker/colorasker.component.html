@@ -1,0 +1,12 @@
+<div class="page-header">
+  <img src="assets/images/shield-large.png" width="70px" />
+  <h1>Color Asker <small>Ask me now</small></h1>
+</div>
+<div class="col-md-4 col-md-offset-4">
+  <div class="input-group">
+    <input #colorInput type="text" class="form-control" placeholder="Type a color..">
+    <span class="input-group-btn">
+        <button class="btn btn-default" type="button" (click)="buttonClicked(colorInput.value)">Preview color now!</button>
+      </span>
+  </div>
+</div>
