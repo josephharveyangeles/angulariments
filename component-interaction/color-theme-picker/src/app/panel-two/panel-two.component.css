@@ -1,0 +1,12 @@
+.callout {
+    padding: 20px;
+    border: 1px solid #1b809e;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+
+.callout h4 {
+    color: #1b809e;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
