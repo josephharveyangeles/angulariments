@@ -2,6 +2,16 @@
 
 These are little code projects and exercises that serves as a supplementary learning material.
 
+## Getting Started
+
+Clone and install the dependencies then run and you're ready to inspect the codes.
+```
+git clone https://github.com/josephharveyangeles/angulariments.git
+cd <section-directory>
+npm install
+ng serve
+```
+
 ## Table of Contents
 
 * [Component Interaction](https://github.com/josephharveyangeles/angulariments/tree/master/component-interaction)  Passing data between components

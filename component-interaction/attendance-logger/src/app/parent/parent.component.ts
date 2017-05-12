@@ -16,9 +16,11 @@ export class ParentComponent {
     if (this.nameList === undefined || this.nameList.length === 0) {
       this.nameList = [];
       this.nameList.push({id: 1, name: this.inputName, time: new Date()});
+      this.inputName = '';
       return;
     }
     this.nameList.push({id: this.nameList.length, name: this.inputName, time: new Date()});
+    this.inputName = '';
   }
 
 }

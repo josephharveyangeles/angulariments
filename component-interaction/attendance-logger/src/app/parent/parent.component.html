@@ -1,28 +1,26 @@
 <div class="row">
     <div class="page-header">
-      <img src="assets/images/shield-large.png" width="70px" />
-      <h1>Attendance <small>{{currentDate | date:'medium'}}</small></h1>
+        <img src="assets/images/shield-large.png" width="70px" />
+        <h1>Attendance <small>{{currentDate | date:'medium'}}</small></h1>
     </div>
     <div class="col-md-4 col-md-offset-4">
-      <div class="input-group">
-        <input [(ngModel)]="inputName" type="text" class="form-control" placeholder="Give a man a name.." />
-        <span class="input-group-btn">
+        <div class="input-group">
+            <input [(ngModel)]="inputName" type="text" class="form-control" placeholder="Give a man a name.." />
+            <span class="input-group-btn">
             <button class="btn btn-default" type="button" (click)="buttonClicked()">Apply</button>
         </span>
-      </div>
-      <table class="table">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Name</th>
-            <th>Time</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr  *ngFor="let name of nameList">
-            <app-child [name]="name"></app-child>
-          </tr>
-        </tbody>       
-      </table>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <app-child *ngFor="let name of nameList" [name]="name"></app-child>
     </div>
 </div>
