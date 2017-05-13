@@ -19,8 +19,9 @@
                 </tr>
             </thead>
             <tbody>
+              <tr *ngFor="let name of nameList" [app-child-tr]="name">
+              </tr>
             </tbody>
         </table>
-        <app-child *ngFor="let name of nameList" [name]="name"></app-child>
     </div>
 </div>

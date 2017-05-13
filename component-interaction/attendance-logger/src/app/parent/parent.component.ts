@@ -19,7 +19,7 @@ export class ParentComponent {
       this.inputName = '';
       return;
     }
-    this.nameList.push({id: this.nameList.length, name: this.inputName, time: new Date()});
+    this.nameList.push({id: this.nameList.length + 1, name: this.inputName, time: new Date()});
     this.inputName = '';
   }
 
